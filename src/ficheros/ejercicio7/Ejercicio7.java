@@ -4,6 +4,7 @@ import ficheros.MetodoLista;
 
 import java.io.*;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Ejercicio7 {
@@ -75,7 +76,7 @@ public class Ejercicio7 {
 
                     }
                     case 3 -> {
-                        for (String contacto:agenda) {
+                        for (Map.Entry<String, Long> contacto : agenda.entrySet()) {
                             System.out.println(contacto);
                         }
                     }
